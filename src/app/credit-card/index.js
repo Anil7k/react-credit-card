@@ -38,11 +38,14 @@ export default function creditCard() {
         else setCardUiNumber('#### #### #### ####')
     }, [cardNumber]);
 
-    const handleChange = (event) => {
+    const handleChange = (type, event) => {
         const re = /^[0-9\b]+$/;
         let number = event.target.value.replace(/\s/g, '')
         if (event.target.value === '' || re.test(number)) {
-            setCardNumber(event.target.value);
+            if (type === 'cvv'){
+                setCardCvv(event.target.value)
+            }
+            else setCardNumber(event.target.value);
         }
     };
 
@@ -87,13 +90,13 @@ export default function creditCard() {
 
                     <CardForm
                         cardNumber={cc_format(cardNumber)}
-                        onNumberChange={handleChange.bind(this)}
+                        onNumberChange={handleChange.bind(this, '')}
                         cardMonthChange={event => setCardMonth(event.target.value)}
                         cardMonth={cardMonth}
                         cardYearChange={event => setCardYear(event.target.value)}
                         cardYear={cardYear}
                         cardCvv={cardCvv}
-                        onCvvChange={event => setCardCvv(event.target.value)}
+                        onCvvChange={handleChange.bind(this, 'cvv')}
                         holderName={holderName}
                         holderNameChange={event => setHolderName(event.target.value)}
                         onCvvFocus={event => setIsFlipped(true)}

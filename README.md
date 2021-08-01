@@ -1,12 +1,14 @@
 # react-credit-card
 Interactive design for credit card
+### Demo
+https://credit-card-react.netlify.app/
 
-In the project directory, you can run:
-# npm install
+Commands to run.
+### npm install
 Installs all the required packages. You must run this command before start the development mode.
-# npm start
+### npm start
 Runs the app in the development mode.
-# npm run build
+### npm run build
 Builds the app for production to the build folder.
-# npm run test 
+### npm run test 
 Validate all test cases.

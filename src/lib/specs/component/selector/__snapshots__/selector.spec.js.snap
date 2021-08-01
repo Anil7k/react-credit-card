@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selector render selector component 1`] = `
+<selector
+  debug={true}
+/>
+`;
+
+exports[`selector should render selector with given params 1`] = `
+<selector
+  onCardBlur=""
+  onCardFocus=""
+  onChange=""
+  placeholder="Year"
+  selectorList=""
+  value="2021"
+/>
+`;

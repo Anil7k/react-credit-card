@@ -1,0 +1,125 @@
+body {
+  background: #ddedfd; }
+
+.form {
+  margin-top: 85px; }
+
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100%; }
+
+.fill img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7; }
+
+.card-wrap {
+  font-family: "Source Code Pro", monospace;
+  width: 349px;
+  position: absolute;
+  top: 10%;
+  margin-left: 13px; }
+  .card-wrap .card {
+    border-radius: 8px;
+    height: 230px;
+    position: relative;
+    color: #fff;
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background-size: cover; }
+    .card-wrap .card .card-type, .card-wrap .card .chip {
+      width: 20%;
+      right: 0;
+      height: 51px;
+      position: absolute;
+      margin: 5%;
+      z-index: 1; }
+      .card-wrap .card .card-type img, .card-wrap .card .chip img {
+        width: 100%;
+        min-height: 20%;
+        max-height: 100%; }
+    .card-wrap .card .chip {
+      width: 15%;
+      left: 0 !important; }
+  .card-wrap .active {
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    border-radius: 5px; }
+  .card-wrap .label {
+    font-size: 14px;
+    opacity: .7;
+    margin-bottom: 5px; }
+  .card-wrap .value {
+    text-transform: uppercase;
+    font-size: 18px; }
+  .card-wrap .number {
+    line-height: 1;
+    position: absolute;
+    top: 85px;
+    left: 21px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 27px;
+    margin-bottom: 35px;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer; }
+    .card-wrap .number span {
+      display: inline-block; }
+  .card-wrap .owner-data {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    box-sizing: border-box; }
+    .card-wrap .owner-data .name, .card-wrap .owner-data .validity {
+      padding: 8px;
+      display: inline; }
+  .card-wrap .black-line {
+    background: rgba(0, 0, 19, 0.8);
+    width: 100%;
+    height: 50px;
+    top: 30px;
+    position: absolute;
+    z-index: 2; }
+  .card-wrap .back-content {
+    text-align: right;
+    position: absolute;
+    z-index: 2;
+    /* padding: 15px; */
+    top: 40%;
+    width: 94%;
+    left: 3%; }
+    .card-wrap .back-content .cvv {
+      padding-right: 10px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 5px; }
+    .card-wrap .back-content .cvv-band {
+      height: 45px;
+      background: #fff;
+      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 10px;
+      color: #1a3b5d;
+      font-size: 18px;
+      border-radius: 4px; }
+    .card-wrap .back-content .cvv-cardType {
+      width: 20%;
+      right: 0;
+      height: 51px;
+      position: absolute;
+      margin: 5%; }
+      .card-wrap .back-content .cvv-cardType img {
+        width: 100%;
+        min-height: 20%;
+        max-height: 100%; }
+
+/*# sourceMappingURL=app.css.map */

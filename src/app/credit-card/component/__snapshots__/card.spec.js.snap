@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`card Check existence of card 1`] = `
+<card
+  debug={true}
+/>
+`;
+
+exports[`card should render card with given strings 1`] = `
+<card
+  cardMonth="07"
+  cardNumber="7667 6767 6565 7676"
+  cardType="visa"
+  cardYear="34"
+  focusedSection="number"
+  holderName="Spak Engineering"
+  isFlipped={true}
+/>
+`;

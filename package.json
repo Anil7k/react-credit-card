@@ -1,7 +1,6 @@
 {
-  "name": "spak-credit-card",
+  "name": "react-credit-card",
   "version": "1.0.0",
-  "description": " ",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --port 3000 --config webpack.config.js",
